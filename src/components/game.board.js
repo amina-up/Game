@@ -2,6 +2,7 @@
 import React from 'react';
 import BoardBox from './board.box';
 import {boardStyle} from "./style"
+
 function GameBoard ({board,lineClick}) {
     
       const cells =()=> {

@@ -8,7 +8,7 @@ import StarGame from './components/start.game';
 
 function App () {
  
-  const [state,setState] = useState({game: new Game({size: {x:3, y:3}}),turn:null});
+  const [state,setState] = useState({game: new Game({size: {x:6, y:6}}),turn:null});
   const [gamerName,setName]=useState('')
 
  function lineClick(line) {
@@ -35,7 +35,7 @@ function App () {
 				<div className="col-md-6">
         <StarGame setName={setName}/>
         <StatusMessage 
-        gamerName={gamerName}
+              gamerName={gamerName}
               game={state.game} 
               turn={state.turn} 
               newGame={newGame}
