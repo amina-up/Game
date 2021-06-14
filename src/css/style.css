@@ -1,0 +1,55 @@
+
+
+
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-rows:    10px auto 10px;
+}
+
+.boxSideN {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  cursor: n-resize;
+}
+
+.boxSideS {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  cursor: s-resize;
+}
+
+.boxSideW {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  cursor: w-resize;
+}
+
+.boxSideE {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  cursor: e-resize;
+}
+
+.boxCenter {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: center;
+}
+
+.bordered {
+  border: 0px solid black;
+}
+
+
