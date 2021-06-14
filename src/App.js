@@ -27,8 +27,10 @@ function App () {
 
     return (
    <div className="container mt-5 body-img">
-     <h1 className='text-center mb-5'>Dots and Boxes</h1>
+    <h1 className='text-center mb-5 title'>Dots & Boxes</h1> 
      
+  
+
 	<div className="row">
 		<div className="col-md-12">
 			<div className="row">
