@@ -8,7 +8,7 @@ import StarGame from './components/start.game';
 
 function App () {
  
-  const [state,setState] = useState({game: new Game({size: {x:6, y:6}}),turn:null});
+  const [state,setState] = useState({game: new Game({size: {x:4, y:4}}),turn:null});
   const [gamerName,setName]=useState('')
 
  function lineClick(line) {
