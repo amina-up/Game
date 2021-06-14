@@ -14,7 +14,7 @@ function StatusMessage ({game,turn,newGame,gamerName}) {
   let noneScore=scores[PLAYER.NONE]
 
   let newGameButton =<Button  onClick={newGame}className="btnTry">
-    <i class="fas fa-redo-alt fa-3x"></i></Button>;
+    <i className="fas fa-redo-alt fa-3x"></i></Button>;
 
   let scoreTxt =
   <>
@@ -27,10 +27,10 @@ function StatusMessage ({game,turn,newGame,gamerName}) {
 
   let newTryGame= <>{newGameButton} </>
 
-  let gameIsOver= <>{newGameButton}<br></br><h3><i class="fas fa-frown-open fa-2x"></i>Game over 
+  let gameIsOver= <>{newGameButton}<br></br><h3><i className="fas fa-frown-open fa-2x"></i>Game over 
   </h3>{scoreTxt}</>
   
-  let youWinGame=<>{newGameButton}<h3><i class="fas fa-trophy fa-2x"></i> You win the game !!!!</h3> {scoreTxt}</>
+  let youWinGame=<>{newGameButton}<h3><i className="fas fa-trophy fa-2x"></i> You win the game !!!!</h3> {scoreTxt}</>
 
   let youAreEquals=<>{newGameButton}<h3>Try again because you are equals</h3>{scoreTxt}</>
 

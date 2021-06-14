@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Media } from 'reactstrap';
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter, InputGroup, Input} from 'reactstrap';
+
 import cover from "../img/cover.jpg"
 
 const ModalExample = ({setName}) => {
@@ -12,7 +12,7 @@ const ModalExample = ({setName}) => {
 
   return (
     <div>
-      <Button color="info " onClick={toggle}><i class="fas  fa-question-circle fa-3x"></i></Button>
+      <Button color="info " onClick={toggle}><i className="fas  fa-question-circle fa-3x"></i></Button>
      
       <Modal isOpen={modal} toggle={toggle} >
          
@@ -21,7 +21,7 @@ const ModalExample = ({setName}) => {
         <ModalBody>
        
         
-        <img width="100%" src={cover} alt="Card image cap" className="mb-5" />
+        <img width="100%" src={cover} alt=" cap" className="mb-5" />
           <h3>How to Play ? </h3>
           <p>
            The game starts with an empty grid 
