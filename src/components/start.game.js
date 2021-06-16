@@ -4,7 +4,7 @@ import { Button, Modal, ModalBody, ModalFooter, InputGroup, Input} from 'reactst
 
 import cover from "../img/cover.jpg"
 
-const ModalExample = ({setName}) => {
+const StartGame = ({setName}) => {
 
   const [modal, setModal] = useState(false);
  
@@ -44,4 +44,4 @@ const ModalExample = ({setName}) => {
   );
 }
 
-export default ModalExample;
+export default StartGame;

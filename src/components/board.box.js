@@ -2,6 +2,7 @@ import React from 'react';
 import EmptyImg from '../img/empty.png';
 import crossImg from '../img/crois.png';
 import circleImg from '../img/cercle.jpg';
+
 import {NO_BORDER,FILL_BORDER,HIDE_BORDER,PLAYER,imgStyle} from "./style"
 
 function BoardBox ({box,lineClick}) {
@@ -11,6 +12,7 @@ return box &&box.owner===PLAYER.USER?circleImg:
 box.owner === PLAYER.COMPUTER?crossImg:EmptyImg
     }
     
+   
 
       let x = box.pos.x + 1;
       let y = box.pos.y + 1;
@@ -30,13 +32,15 @@ box.owner === PLAYER.COMPUTER?crossImg:EmptyImg
    
       if(box.pos.x === 0) {
         boxStyle.borderLeft = box.left ? FILL_BORDER + ownerColor[box.left] : NO_BORDER;
+   
       }
       if(box.pos.y === 0) {
         boxStyle.borderTop = box.top ? FILL_BORDER + ownerColor[box.top] : NO_BORDER;
+     
       }
       boxStyle.borderRight = box.right ? FILL_BORDER + ownerColor[box.right] : NO_BORDER;
       boxStyle.borderBottom = box.bottom ? FILL_BORDER + ownerColor[box.bottom] : NO_BORDER;
-  
+     
       return (
         <div className="boxContainer" style={boxStyle} >
           

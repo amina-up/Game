@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import {Game} from 'dots-and-boxes';
+import {Game,CONST} from 'dots-and-boxes';
 import StatusMessage from './components/status.msg';
 import './css/style.css';
 import GameBoard from './components/game.board';
@@ -8,16 +8,31 @@ import StarGame from './components/start.game';
 
 function App () {
  
-  const [state,setState] = useState({game: new Game({size: {x:4, y:4}}),turn:null});
+  const [state,setState] = useState({game: new Game({size: {x:3, y:3}}),turn:null});
   const [gamerName,setName]=useState('')
-
+  const PLAYER = CONST.PLAYER;
  function lineClick(line) {
     let turn = state.game.executeUserTurn(line);
+   
     if (turn) {
+    
     setState({game:state.game});
-    }
-  }
   
+    }
+
+
+if(turn&&turn.otherTurn){
+  let completer=turn.otherTurn
+  let turnComputer=completer.filter((el=>el.complete===true))
+if(!turn&&turnComputer){
+  state.game.executeAutoTurn(PLAYER.COMPUTER);
+}
+  
+}
+ 
+
+  }
+ 
   const newGame =()=> {
     let game = new Game({size:state.game.size});
 
