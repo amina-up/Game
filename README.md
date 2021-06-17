@@ -1,6 +1,7 @@
 # Game
 <p>
-Dots and Boxes is a pencil-and-paper game for two players.the game of dots, boxes, dot to dot grid, and pigs in a pen , i developed this game using dots-and-boxes package ; you paly against computer
+Dots and Boxes is a pencil-and-paper game for two players.the game of dots, boxes, dot to dot grid, and pigs in a pen ,</br>
+i developed this game using dots-and-boxes package ; you play against computer
  <p>
    
    
